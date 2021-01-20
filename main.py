@@ -147,7 +147,8 @@ def main():
     player1 = Player(*terrain.spawnpoint1)
     player2 = Player(*terrain.spawnpoint2)
     player2.turn = False
-    while True:
+    while
+True:
         screen.fill((0, 0, 0))
         draw_text('game', font, (255, 255, 255), screen, 20, 20)
         for event in pygame.event.get():
@@ -167,5 +168,5 @@ def main():
         clock.tick(FPS)
 
 
-if __name__ == '__main__':
+if name == '__main__':
     main_menu()
